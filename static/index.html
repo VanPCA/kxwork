@@ -4,17 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mydraw</title>
+    <title>来了就是♂客</title>
+    <link rel="stylesheet" href="materialize.min.css" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
-    要抽几个呀：<input id="personNum">
-    <button type="submit" onclick="doit()">提交</button>
-    <br><br>
-    <div id="app">
-        <div id="name">抽来扮莲华</div>
-        <div id="number"></div>
-      </div>
-    <script src="./index.js"></script>
+    <div id="container">
+        <div id="header">欢迎您的到来 <p style="font-size: 20px;">ここへようこそ</p></欢迎您的到来></div>
+        <div id="main">
+            <div id="sideL" >
+                <span>
+                    <h3 style="color: crimson;">Hello!</h3><p>这是一个抽奖网页。</p>
+                    <p>您可以直接抽人（不一定要扮莲华），也可以先定好想抽取的人数，我会在抽到最后一个的时候通知您。</p>
+                    <p>食用方法：按下Enter开始抽取，再按下Enter完成本次抽奖。</p>
+                </span>
+            </div>
+
+            <div id="center" >
+                <br>
+                要抽几个呀：<input id="personNum">
+                <button type="submit" onclick="doit()" id="NumChoose" class="waves-effect waves-light btn blue">提交<i class="material-icons right">send</i></button>
+                <br><br>
+                <div id="app" >
+                    <div id="name">抽来扮莲华</div>
+                    <div id="number"></div>
+                  </div>
+                <script src="./index.js"></script>
+            </div>
+
+            <div id="sideR"></div>
+            <div id="footer">
+                <div class="vline1">
+                     <div class="fttitle">
+                         <p style="font-size: 20px;font-weight: bold;">常用网站</p><br>
+                        </div>
+                        <div class="list">
+                             <ul >
+                             <li ><a class="web"href="https://www.bilibili.com/" target="_blank">bilibili</a></li>
+                             <li ><a class="web"href="https://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+                             <li ><a class="web"href="https://www.imooc.com/" target="_blank">慕课网</a></li>
+                             <li ><a class="web"href="https://sast.njupt.edu.cn/atsast/" target="_blank">sast</a></li>
+                             <li ><a class="web"href="https://codepen.io/" target="_blank">codepen</a></li>
+                         </ul>
+                        </div>
+                                 </div>
+                                 <!--网址导航-->
+                                 <div class="vline2" >
+                                     <div class="fttitle">
+                                         <p style="font-size: 20px;font-weight: bold;">国内高校官网</p><br>
+                                        </div>
+                                        <div class="list">
+                                            <ul>
+                                                <li><a class="web" href="https://www.tsinghua.edu.cn/publish/thu2018/index.html"target="_blank">清华大学</a></li>
+                                                <li><a class="web" href="https://www.pku.edu.cn/"target="_blank">北京大学</a></li>
+                                                <li><a class="web" href="https://www.fudan.edu.cn/"target="_blank">复旦大学</a></li>
+                                                <li><a class="web" href="http://www.xjtu.edu.cn/"target="_blank">西安交通大学</a></li>
+                                                <li><a class="web" href="https://www.nju.edu.cn/"target="_blank">南京大学</a></li>
+                                                <li><a class="web" href="njupt.html"target="_blank">南京邮电大学</a></li>
+                                            </ul>
+                                        </div>
+                                 </div> 
+                                 <!--校园官网--> 
+                                 <div class="vline1">
+                                     <div class="fttitle">
+                                        <p style="font-size: 20px;font-weight: bold;">事事关心</p><br>
+                                     </div>
+                                     <div class="list">
+                                         <ul>
+                                             <li><a class="web" href="https://www.sohu.com/" target="_blank">搜狐</a></li>
+                                             <li><a class="web" href="https://www.sina.com.cn/" target="_blank">新浪</a></li>
+                                             <li><a class="web" href="https://www.toutiao.com/" target="_blank">头条</a></li>
+                                             <li><a class="web" href="https://news.baidu.com/" target="_blank">百度新闻</a></li>
+                                             <li><a class="web" href="https://news.qq.com/" target="_blank">腾讯新闻</a></li>
+                                             <li><a class="web" href="https://news.163.com/" target="_blank">网易新闻</a></li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                                 <!-- 新闻网站-->
+                                 <div id="decoration">
+                                     <div class="zhuzi" id="zhuzi1" style="height: 50px;">
+                                     </div>
+                                     <div class="zhuzi" id="zhuzi2" style="height: 120px;">
+                                 </div>
+                                 <div class="zhuzi" id="zhuzi3" style="height: 200px;">
+                                </div>
+                                <div class="zhuzi" id="zhuzi4" style="height: 150px;">
+                                </div>
+                                <div class="zhuzi" id="zhuzi5" style="height: 80px;">
+                                </div>
+                                 </div>
+                                 <!-- 动态柱子 -->
+                                    </div> 
+                                    
+            <div id="extra"><img style="width: 100px;height: 100px;float: right;" src="D:\前端\图片\二维码.jpg"><br>请大家多多支持<br>ありがとうございます！</div>   
+    </div>
+        
+    
+    </div>
 </body>
 </html>

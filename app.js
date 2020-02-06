@@ -22,7 +22,5 @@ res.json(data);
      document.write(e);
     }
 });
-   
- 
 app.listen(8888);
 console.log('server start at http://localhost:8888')
